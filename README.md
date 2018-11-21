@@ -92,3 +92,13 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
  - [Getting started with Twitter Developer Platform](https://developer.twitter.com/en/docs/basics/getting-started)
  - [How to Install PIP for Python on Windows, Mac and Linux](https://www.makeuseof.com/tag/install-pip-for-python/)
+
+### License
+
+MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)
+
+
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
+[![GitHub forks](https://img.shields.io/github/forks/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/network) [![GitHub stars](https://img.shields.io/github/stars/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/stargazers)
+
+
