@@ -3,7 +3,7 @@
 #### The project is about searching the twitter for job opportunities using popular [#hashtags](https://github.com/vinitshahdeo) and applying sentiment analysis on this.
 
 #### Few popular hashtags - 
-### `#Jobs` `#Careers` `#JobOpening` 
+### [`#Jobs` `#Careers` `#JobOpening`]
 ### `#FreshHiring` `#Recruitments` `#JobOpportunities`
 
 ### Motivation
