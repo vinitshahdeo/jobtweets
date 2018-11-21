@@ -59,7 +59,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 ### Libraries Used
 
-[![Generic badge](https://img.shields.io/badge/Python-Tweepy-red.svg?style=plastic)](http://docs.tweepy.org/en/v3.5.0/) [![Generic badge](https://img.shields.io/badge/Python-TextBlob-red.svg?style=plastic)](https://textblob.readthedocs.io/en/dev/)
+[![Generic badge](https://img.shields.io/badge/Python-Tweepy-blue.svg?style=plastic)](http://docs.tweepy.org/en/v3.5.0/) [![Generic badge](https://img.shields.io/badge/Python-TextBlob-blue.svg?style=plastic)](https://textblob.readthedocs.io/en/dev/)
 
 - [Tweepy](http://docs.tweepy.org/en/v3.5.0/) - **tweepy** is the python client for the official [Twitter API](https://developer.twitter.com/en/docs).
 - [TextBlob](https://textblob.readthedocs.io/en/dev/) - **textblob** is the python library for processing textual data.
