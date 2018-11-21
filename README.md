@@ -13,8 +13,7 @@ Twitter is all about enabling users to send out brief messages to large audience
 
 ### Few popular hashtags - 
 
--	#Jobs
--	#Careers
+`#Jobs` `#Careers`
 -	#JobOpening
 -   #FreshHiring
 -	#JobListing
