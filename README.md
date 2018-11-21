@@ -97,6 +97,10 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
  - [Getting started with Twitter Developer Platform](https://developer.twitter.com/en/docs/basics/getting-started)
  - [How to Install PIP for Python on Windows, Mac and Linux](https://www.makeuseof.com/tag/install-pip-for-python/)
+ 
+### Need help?
+
+Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)
 
 ### License
 
