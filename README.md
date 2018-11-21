@@ -83,6 +83,11 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 - Run `python jobtweets.py`
 - It may take a minute to fetch the results from **Twitter**. Make sure that you've proper internet connection.
 
+### Project Reports
+
+- [Download](https://github.com/vinitshahdeo/jobtweets/raw/master/report/presentation.pptx) the presentation.
+- [Download](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) project report.
+
 ### Useful Links
 
  - [Getting started with Twitter Developer Platform](https://developer.twitter.com/en/docs/basics/getting-started)
