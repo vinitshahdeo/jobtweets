@@ -17,6 +17,37 @@ Twitter is all about enabling users to send out brief messages to large audience
 
 Sentiment Analysis is the process of ‘computationally’ determining whether a piece of writing is positive, negative or neutral. It’s also known as opinion mining, deriving the opinion or attitude of a speaker.
 
+#### Steps involved in this project
+
+3 major steps in `jobtweets.py` code :
+
+1. Authorize twitter API client.
+2. Make a GET request to Twitter API to fetch tweets for a particular query.
+3. Parse the tweets. Classify each tweet as positive, negative or neutral.
+
+#### Explanation
+
+- First of all, I've created a **TwitterClient** class. This class contains all the methods to interact with Twitter API and parsing tweets. We use `__init__` function to handle the authentication of API client.
+
+- In **get_tweets** function, I have used `fetched_tweets = self.api.search(q = query, count = count)` to call the Twitter API to fetch tweets. 'query' is basically, the hashtags.
+
+- In **get_tweet_sentiment** I've used textblob module. 
+`analysis = TextBlob(self.clean_tweet(tweet))`
+
+- `clean_tweet` method to remove links, special characters, etc. from the tweet using some simple regex.
+
+- I have used **sentiment.polarity** method of **TextBlob** class to get the polarity of tweet between -1 to 1.
+
+```python
+if analysis.sentiment.polarity > 0:
+       return 'positive'
+elif analysis.sentiment.polarity == 0:
+       return 'neutral'
+else:
+       return 'negative'
+```
+- Finally, I've printing the percentage of positive, negative and neutral tweets about a **#hashtag**(query).
+
 ### Libraries Used
 
 - [Tweepy](http://docs.tweepy.org/en/v3.5.0/) - **tweepy** is the python client for the official [Twitter API](https://developer.twitter.com/en/docs).
