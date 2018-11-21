@@ -34,7 +34,7 @@ Sentiment Analysis is the process of ‘computationally’ determining whether a
 - In **get_tweet_sentiment** I've used textblob module. 
 `analysis = TextBlob(self.clean_tweet(tweet))`
 
-- `clean_tweet` method to remove links, special characters, etc. from the tweet using some simple regex.
+- **clean_tweet** method to remove links, special characters, etc. from the tweet using some simple regex.
 
 - I have used **sentiment.polarity** method of **TextBlob** class to get the polarity of tweet between -1 to 1.
 
@@ -47,6 +47,12 @@ else:
        return 'negative'
 ```
 - Finally, I've printing the percentage of positive, negative and neutral tweets about a **#hashtag**(query).
+
+**Note** - You can change the hashtags by changing `query = 'WRITE YOUR OWN HASHTAG'`
+
+```python
+tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+```
 
 ### Libraries Used
 
