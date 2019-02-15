@@ -8,11 +8,18 @@
 body{
   font-family : "Oxygen", sans-serif;
 }
-a {
-  color:#286e75;
-  text-decoration:none;
-}
+
 h1{
   font-weight : bold;
+  color: #0052CC;
   font-family : 'Montserrat', sans-serif;
+}
+
+a {
+  color:#2684FF;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#0747A6;
 }
