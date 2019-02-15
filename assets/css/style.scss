@@ -9,10 +9,14 @@ body{
   font-family : "Montserrat", sans-serif;
 }
 
-h1 {
-  color : #2684FF
+h1, h2 {
+  color : #0747A6
 }
 
-h2 {
+a {
   color : #0747A6
+}
+
+a:hover {
+  color : #2684FF
 }
