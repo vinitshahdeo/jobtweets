@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 show_downloads: true
+title : Job Tweets
+description : Twitter sentiment analysis to find job opportunities
 logo : hashtag.png
