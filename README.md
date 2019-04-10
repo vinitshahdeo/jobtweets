@@ -6,6 +6,8 @@
 
 #### The project is about searching the twitter for job opportunities using popular [#hashtags](https://twitter.com/search?q=%23jobs&src=typd) and applying sentiment analysis on this.
 
+[![GitHub repo size](https://img.shields.io/github/repo-size/vinitshahdeo/jobtweets.svg?logo=github&style=social)](https://github.com/vinitshahdeo/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/jobtweets.svg?logo=git&style=social)](https://github.com/vinitshahdeo/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/jobtweets.svg?logo=python&style=social)](https://github.com/vinitshahdeo/)
+
 #### Few popular hashtags - 
 ### `#Jobs` `#Careers` `#JobOpening`
 ### `#FreshHiring` `#Recruitments` `#JobOpportunities`
