@@ -107,6 +107,8 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)
 
+[![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=@vinitshahdeo@gmail.com&color=red&logo=gmail&style=social)](https://www.facebook.com/vinit.shahdeo)
+
 ### License
 
 MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)
