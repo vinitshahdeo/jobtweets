@@ -93,7 +93,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 ### Project Reports
 
-[![PPT](https://img.shields.io/static/v1.svg?label=download&message=PPT&logo=microsoft-powerpoint&style=social)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/presentation.pptx) [![report](https://img.shields.io/static/v1.svg?label=download&message=Report&logo=microsoft-word&style=social)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf)
+[![PPT](https://img.shields.io/static/v1.svg?label=Project&message=PPT&logo=microsoft-powerpoint&style=social)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/presentation.pptx) [![report](https://img.shields.io/static/v1.svg?label=Project&message=Report&logo=microsoft-word&style=social)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf)
 
 - [Download](https://github.com/vinitshahdeo/jobtweets/raw/master/report/presentation.pptx) the presentation.
 - [Download](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) project report.
