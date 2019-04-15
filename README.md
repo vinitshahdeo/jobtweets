@@ -74,6 +74,8 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 ### How to run?
 
+[![python](https://img.shields.io/badge/python-jobtweets.py-lightgrey.svg?logo=python&style=social)](https://github.com/vinitshahdeo/jobtweets/)
+
 - Get started with **Twitter API** by signing up for [Twitter Developer Account](https://dev.twitter.com/apps).
 - In order to fetch tweets through **Twitter API**, you need to register an App through your twitter account. 
 - Follow this [link](https://apps.twitter.com/) to register your app.
