@@ -62,7 +62,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 ### Libraries Used
 
-[![Generic badge](https://img.shields.io/badge/Python-Tweepy-blue.svg?style=plastic)](http://docs.tweepy.org/en/v3.5.0/) [![Generic badge](https://img.shields.io/badge/Python-TextBlob-blue.svg?style=plastic)](https://textblob.readthedocs.io/en/dev/)
+[![tweepy](https://img.shields.io/badge/Python-Tweepy-blue.svg?style=flat&logo=python&logoColor=white)](http://docs.tweepy.org/en/v3.5.0/) [![textblob](https://img.shields.io/badge/Python-TextBlob-blue.svg?style=flat&logo=python&logoColor=white)](https://textblob.readthedocs.io/en/dev/)
 
 - [Tweepy](http://docs.tweepy.org/en/v3.5.0/) - **tweepy** is the python client for the official [Twitter API](https://developer.twitter.com/en/docs).
 - [TextBlob](https://textblob.readthedocs.io/en/dev/) - **textblob** is the python library for processing textual data.
@@ -105,11 +105,17 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
  - [Getting started with Twitter Developer Platform](https://developer.twitter.com/en/docs/basics/getting-started)
  - [How to Install PIP for Python on Windows, Mac and Linux](https://www.makeuseof.com/tag/install-pip-for-python/)
  
+### Related Work
+
+[![Sentiment Analysis](https://img.shields.io/static/v1.svg?label=Sentiment&message=Analysis&color=lightgray&logo=twitter&style=social&colorA=critical)](https://github.com/vinitshahdeo/TwitterSentimentAnalysis/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/TwitterSentimentAnalysis.svg?logo=php&style=social)](https://github.com/vinitshahdeo/)
+
+[Twitter Sentiment Analyzer](https://vinitshahdeo.github.io/TwitterSentimentAnalysis/) - A web app to search the keywords(Hashtags) on Twitter and analyze the sentiments of it. The source code is written in **PHP** and it performs Sentiment Analysis on Tweets by using the Datumbox API.
+ 
 ### Need help?
 
 [![Facebook](https://img.shields.io/static/v1.svg?label=follow&message=@vinit.shahdeo&color=9cf&logo=facebook&style=flat&logoColor=white&colorA=informational)](https://www.facebook.com/vinit.shahdeo)  [![Instagram](https://img.shields.io/static/v1.svg?label=follow&message=@vinitshahdeo&color=grey&logo=instagram&style=flat&logoColor=white&colorA=critical)](https://www.instagram.com/vinitshahdeo/) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@vinitshahdeo&color=success&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/vinitshahdeo/)
 
-Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)
+:email: Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)
 
 [![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=vinitshahdeo@gmail.com&color=red&logo=gmail&style=social)](https://www.github.com/vinitshahdeo)
 
