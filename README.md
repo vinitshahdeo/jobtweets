@@ -123,6 +123,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)
 
+----
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
 [![GitHub forks](https://img.shields.io/github/forks/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/network) [![GitHub stars](https://img.shields.io/github/stars/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/stargazers) [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow&style=social)](https://github.com/vinitshahdeo/)
