@@ -1,4 +1,4 @@
-# Job Opportunities using Twitter
+# Job Opportunities using [Twitter](https://twitter.com/)
 ## Twitter Sentiment Analysis using Python
 
 [![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) 
