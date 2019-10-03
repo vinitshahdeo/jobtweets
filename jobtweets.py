@@ -50,43 +50,54 @@ class TwitterClient(object):
         else:
             return 'negative'
  
-    def get_tweets(self, query, count = 10):
+    def get_queries(self):
+        '''
+        Utility function to get the tweets to be queried
+        from the user as comma seprated input
+        '''
+
+
+        query = input("Enter the hashags to query (If more than 1, then separate by comma)")
+        queries = query.split(',')
+        return queries
+
+    def get_tweets(self, queries, count = 10):
         '''
         Main function to fetch tweets and parse them.
         '''
        
         tweets = []
- 
-        try:
+        for query in queries:
+            try:
           
-            fetched_tweets = self.api.search(q = query, count = count)
+                fetched_tweets = self.api.search(q = query, count = count)
  
            
-            for tweet in fetched_tweets:
+                for tweet in fetched_tweets:
                
-                parsed_tweet = {}
+                    parsed_tweet = {}
  
                
-                parsed_tweet['text'] = tweet.text
+                    parsed_tweet['text'] = tweet.text
                
-                parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
+                    parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
  
-                if tweet.retweet_count > 0:
+                    if tweet.retweet_count > 0:
                  
-                    if parsed_tweet not in tweets:
+                        if parsed_tweet not in tweets:
+                            tweets.append(parsed_tweet)
+                    else:
                         tweets.append(parsed_tweet)
-                else:
-                    tweets.append(parsed_tweet)
  
+            except tweepy.TweepError as e:
+                print("Error : " + str(e))
         
-            return tweets
- 
-        except tweepy.TweepError as e:
-            print("Error : " + str(e))
+        return tweets
  
 def main():
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    queries = api.get_queries()
+    tweets = api.get_tweets(query = queries, count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
