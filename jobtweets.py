@@ -55,14 +55,14 @@ class TwitterClient(object):
         Main function to fetch tweets and parse them.
         '''
         queries = ""
-        topicList = []
+        topic_list = []
         tweets = []
         topics = input("Enter the topics: ")
         
         for x in topics.split(","):
-            topicList.append(x.strip(" ") + " OR ")
+            topic_list.append(x.strip(" ") + " OR ")
         
-        for tmp in topicList:
+        for tmp in topic_list:
             queries += (tmp)
         
         tweets = []
