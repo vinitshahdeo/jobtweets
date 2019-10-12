@@ -1,6 +1,10 @@
 # Job Opportunities using Twitter
 ## Twitter Sentiment Analysis using Python
 
+## About Sentiment Analysis
+
+Sentiment analysis is contextual mining of text which identifies and extracts subjective information in source material, and helping a business to understand the social sentiment of their brand, product or service while monitoring online conversations.
+
 [![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) 
 [![Generic badge](https://img.shields.io/badge/Twitter-API-orange.svg?style=for-the-badge)](https://twitter.com/Vinit_Shahdeo) [![Generic badge](https://img.shields.io/badge/Job-Opportunities-blue.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) 
 
