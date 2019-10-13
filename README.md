@@ -14,7 +14,7 @@
 
 ### Motivation
 
-Twitter is all about enabling users to send out brief messages to large audiences. If you haven’t been taking advantage of Twitter as a job search tool, it’s time to jump in. When used intelligently, Twitter can have a profound impact on your job search success – or lack thereof. Small steps can help you turn Twitter into your own personal job search platform. Try them today and see what a difference they make in your overall job search success.
+**Twitter is all about enabling users to send out brief messages to large audiences. If you haven’t been taking advantage of Twitter as a job search tool, it’s time to jump in. When used intelligently, Twitter can have a profound impact on your job search success – or lack thereof. Small steps can help you turn Twitter into your own personal job search platform. Try them today and see what a difference they make in your overall job search success.**
 
 ### About the Project
 
@@ -33,7 +33,7 @@ Sentiment Analysis is the process of ‘computationally’ determining whether a
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/vinitshahdeo/jobtweets) [![Made with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahdeo) [![Makes people smile](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/vinitshahdeo)
 #### Explanation
 
-- First of all, I've created a **TwitterClient** class. This class contains all the methods to interact with Twitter API and parsing tweets. We use `__init__` function to handle the authentication of API client.
+- **First of all, I've created a **TwitterClient** class. This class contains all the methods to interact with Twitter API and parsing tweets. We use `__init__` function to handle the authentication of API client.**
 
 - In **get_tweets** function, I have used `fetched_tweets = self.api.search(q = query, count = count)` to call the Twitter API to fetch tweets. 'query' is basically, the hashtags.
 
@@ -42,7 +42,7 @@ Sentiment Analysis is the process of ‘computationally’ determining whether a
 
 - **clean_tweet** method to remove links, special characters, etc. from the tweet using some simple regex.
 
-- I have used **sentiment.polarity** method of **TextBlob** class to get the polarity of tweet between -1 to 1.
+- **I have used **sentiment.polarity** method of **TextBlob** class to get the polarity of tweet between -1 to 1.**
 
 ```python
 if analysis.sentiment.polarity > 0:
@@ -52,7 +52,7 @@ elif analysis.sentiment.polarity == 0:
 else:
        return 'negative'
 ```
-- Finally, I've printing the percentage of positive, negative and neutral tweets about a **#hashtag**(query).
+- **Finally, I've printing the percentage of positive, negative and neutral tweets about a **#hashtag**(query).**
 
 **Note** - You can change the hashtags by changing `query = 'WRITE YOUR OWN HASHTAG'`
 
@@ -115,13 +115,13 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 [![Facebook](https://img.shields.io/static/v1.svg?label=follow&message=@vinit.shahdeo&color=9cf&logo=facebook&style=flat&logoColor=white&colorA=informational)](https://www.facebook.com/vinit.shahdeo)  [![Instagram](https://img.shields.io/static/v1.svg?label=follow&message=@vinitshahdeo&color=grey&logo=instagram&style=flat&logoColor=white&colorA=critical)](https://www.instagram.com/vinitshahdeo/) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@vinitshahdeo&color=success&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/vinitshahdeo/)
 
-:email: Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)
+:email: **Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/)**
 
 [![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=vinitshahdeo@gmail.com&color=red&logo=gmail&style=social)](https://www.github.com/vinitshahdeo)
 
 ### License
 
-MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)
+**MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)**
 
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
