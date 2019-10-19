@@ -92,7 +92,6 @@ def main():
     tags_space_sep_list = sys.argv[1:]
     all_tags = ' '.join(tags_space_sep_list)
     tags = [tag.strip() for tag in all_tags.split(',')]
-    print(tags)
     for tag in tags:
         tweets = api.get_tweets(query = tag, count = 500)
         ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
