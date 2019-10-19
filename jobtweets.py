@@ -2,6 +2,7 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+import sys
  
 class TwitterClient(object):
     '''
@@ -86,24 +87,31 @@ class TwitterClient(object):
  
 def main():
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
-    ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
-   
-    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+    #Get all tags to search and store in tags
+    tags = []
+    tags_space_sep_list = sys.argv[1:]
+    all_tags = ' '.join(tags_space_sep_list)
+    tags = [tag.strip() for tag in all_tags.split(',')]
+    print(tags)
+    for tag in tags:
+        tweets = api.get_tweets(query = tag, count = 500)
+        ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
+       
+        print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
 
-    ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
+        ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
 
-    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
+        print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
 
-    print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
- 
-    print("\n\nPositive tweets:")
-    for tweet in ptweets[:10]:
-        print(tweet['text'])
- 
-    print("\n\nNegative tweets:")
-    for tweet in ntweets[:10]:
-        print(tweet['text'])
+        print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
+     
+        print("\n\nPositive tweets:")
+        for tweet in ptweets[:10]:
+            print(tweet['text'])
+     
+        print("\n\nNegative tweets:")
+        for tweet in ntweets[:10]:
+            print(tweet['text'])
  
 if __name__ == "__main__":
 
