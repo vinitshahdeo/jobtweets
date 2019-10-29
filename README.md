@@ -121,7 +121,9 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 ### License
 
-MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)
+[![Vinit Shahdeo](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/7)
+
+**MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)**
 
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
