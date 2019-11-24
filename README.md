@@ -117,7 +117,11 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](https://github.com/vinitshahdeo/jobtweets/pulls) [![GitHub issues](https://img.shields.io/github/issues/vinitshahdeo/jobtweets?logo=github)](https://github.com/vinitshahdeo/jobtweets/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr/vinitshahdeo/jobtweets?color=blue&logo=github) 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vinitshahdeo/jobtweets?logo=github)](https://github.com/vinitshahdeo/jobtweets/)
 
-- Clone [this](https://github.com/vinitshahdeo/jobtweets/) repository: `https://github.com/vinitshahdeo/jobtweets.git`
+- Clone [this](https://github.com/vinitshahdeo/jobtweets/) repository:
+
+``` 
+git clone https://github.com/vinitshahdeo/jobtweets.git
+```
 
 - Check out any issue from [here](https://github.com/vinitshahdeo/jobtweets/issues).
 
