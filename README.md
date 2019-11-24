@@ -110,6 +110,18 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 [![Sentiment Analysis](https://img.shields.io/static/v1.svg?label=Sentiment&message=Analysis&color=lightgray&logo=twitter&style=social&colorA=critical)](https://github.com/vinitshahdeo/TwitterSentimentAnalysis/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/TwitterSentimentAnalysis.svg?logo=php&style=social)](https://github.com/vinitshahdeo/)
 
 [Twitter Sentiment Analyzer](https://vinitshahdeo.github.io/TwitterSentimentAnalysis/) - A web app to search the keywords(Hashtags) on Twitter and analyze the sentiments of it. The source code is written in **PHP** and it performs Sentiment Analysis on Tweets by using the Datumbox API.
+
+
+### Contributing
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](https://github.com/vinitshahdeo/jobtweets/pulls) [![GitHub issues](https://img.shields.io/github/issues/vinitshahdeo/jobtweets?logo=github)](https://github.com/vinitshahdeo/jobtweets/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr/vinitshahdeo/jobtweets?color=blue&logo=github) 
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vinitshahdeo/jobtweets?logo=github)](https://github.com/vinitshahdeo/jobtweets/)
+
+- Clone [this](https://github.com/vinitshahdeo/jobtweets/) repository: `https://github.com/vinitshahdeo/jobtweets.git`
+
+- Check out any issue from [here](https://github.com/vinitshahdeo/jobtweets/issues).
+
+- Make changes and send [Pull Request](https://github.com/vinitshahdeo/jobtweets/pull).
  
 ### Need help?
 
