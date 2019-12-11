@@ -2,7 +2,7 @@
 ## Twitter Sentiment Analysis using Python
 
 [![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) 
-[![Generic badge](https://img.shields.io/badge/Twitter-API-orange.svg?style=for-the-badge)](https://twitter.com/Vinit_Shahdeo) [![Generic badge](https://img.shields.io/badge/Job-Opportunities-blue.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) 
+[![Generic badge](https://img.shields.io/badge/Twitter-API-orange.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Vinit_Shahdeo) [![Generic badge](https://img.shields.io/badge/Job-Opportunities-blue.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) 
 
 #### The project is about searching the twitter for job opportunities using popular [#hashtags](https://twitter.com/search?q=%23jobs&src=typd) and applying sentiment analysis on this.
 
