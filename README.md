@@ -8,13 +8,9 @@ Twitter is all about enabling users to send out brief messages to large audience
 
 Sentiment Analysis is the process of ‘computationally’ determining whether a piece of writing is positive, negative or neutral. It’s also known as opinion mining, deriving the opinion or attitude of a speaker.
 
-#### Steps involved in this project
+#### Steps involved in this file
 
-3 major steps in `jobtweets.py` code :
 
-1. Authorize twitter API client.
-2. Make a GET request to Twitter API to fetch tweets for a particular query.
-3. Parse the tweets. Classify each tweet as positive, negative or neutral.
 
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/vinitshahdeo/jobtweets) [![Made with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahdeo) [![Makes people smile](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/vinitshahdeo)
 #### Explanation
