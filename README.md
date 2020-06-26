@@ -1,4 +1,4 @@
-# Job Opportunities using Twitter
+# Job Opportunities using [Twitter](https://twitter.com/Vinit_Shahdeo)
 ## Twitter Sentiment Analysis using Python
 
 [![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) 
@@ -8,7 +8,7 @@
 
 [![GitHub repo size](https://img.shields.io/github/repo-size/vinitshahdeo/jobtweets.svg?logo=github&style=social)](https://github.com/vinitshahdeo/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/jobtweets.svg?logo=git&style=social)](https://github.com/vinitshahdeo/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/jobtweets.svg?logo=python&style=social)](https://github.com/vinitshahdeo/)
 
-#### Few popular hashtags
+#### Few popular [#hashtags](https://twitter.com/Vinit_Shahdeo)
 
 [![jobs](https://badgen.net/badge/%23/jobs?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) [![Careers](https://badgen.net/badge/%23/careers?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) [![JobOpening](https://badgen.net/badge/%23/JobOpening?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) 
 
