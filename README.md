@@ -1,7 +1,8 @@
 # Job Opportunities using Twitter
 ## Twitter Sentiment Analysis using Python
 
-[![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) 
+[![Generic badge](https://img.shields.io/badge/Sentiment-Analysis-teal.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets?ref=badge_shield)
+
 [![Generic badge](https://img.shields.io/badge/Twitter-API-orange.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Vinit_Shahdeo) [![Generic badge](https://img.shields.io/badge/Job-Opportunities-blue.svg?style=for-the-badge)](https://github.com/vinitshahdeo/jobtweets/raw/master/report/REPORT.pdf) 
 
 #### The project is about searching the twitter for job opportunities using popular [#hashtags](https://twitter.com/search?q=%23jobs&src=typd) and applying sentiment analysis on this.
@@ -145,3 +146,6 @@ MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social&logo=github)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
 [![GitHub forks](https://img.shields.io/github/forks/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/network) [![GitHub stars](https://img.shields.io/github/stars/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/stargazers) [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow&style=social)](https://github.com/vinitshahdeo/)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets?ref=badge_large)
