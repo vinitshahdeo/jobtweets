@@ -137,6 +137,8 @@ Feel free to contact me @ [vinitshahdeo@gmail.com](https://mail.google.com/mail/
 
 ### License
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvinitshahdeo%2Fjobtweets?ref=badge_large)
+
 [![Vinit Shahdeo](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/jobtweets/links/7)
 
 **MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE)**
