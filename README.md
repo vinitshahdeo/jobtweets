@@ -150,3 +150,10 @@ MIT &copy; [Vinit Shahdeo](https://github.com/vinitshahdeo/jobtweets/blob/master
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/jobtweets.svg?style=social&logo=github)](https://github.com/vinitshahdeo/jobtweets/blob/master/LICENSE) 
 [![GitHub forks](https://img.shields.io/github/forks/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/network) [![GitHub stars](https://img.shields.io/github/stars/vinitshahdeo/jobtweets.svg?style=social)](https://github.com/vinitshahdeo/jobtweets/stargazers) [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow&style=social)](https://github.com/vinitshahdeo/)
+
+------
+
+<p align="center"><strong><sup>:hugs: <br>Check out my other projects <a href="./PROJECTS.md">here</a>!</sup></strong></p>
+
+------
+
