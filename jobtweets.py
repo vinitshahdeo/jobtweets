@@ -2,7 +2,7 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
- 
+import argparse
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
@@ -85,8 +85,11 @@ class TwitterClient(object):
             print("Error : " + str(e))
  
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('-q','--query',dest='quer',type=str,help='Query for search',required=True)
+    args=parser.parse_args()
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    tweets = api.get_tweets(query = args.quer, count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
