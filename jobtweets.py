@@ -50,16 +50,26 @@ class TwitterClient(object):
         else:
             return 'negative'
  
-    def get_tweets(self, query, count = 10):
+    def get_tweets(self, count = 10):
         '''
         Main function to fetch tweets and parse them.
         '''
-       
+        queries = ""
+        topic_list = []
+        tweets = []
+        topics = input("Enter the topics: ")
+        
+        for x in topics.split(","):
+            topic_list.append(x.strip(" ") + " OR ")
+        
+        for tmp in topic_list:
+            queries += (tmp)
+        
         tweets = []
  
         try:
           
-            fetched_tweets = self.api.search(q = query, count = count)
+            fetched_tweets = self.api.search(q = queries, count = count)
  
            
             for tweet in fetched_tweets:
@@ -86,7 +96,7 @@ class TwitterClient(object):
  
 def main():
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    tweets = api.get_tweets(count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
