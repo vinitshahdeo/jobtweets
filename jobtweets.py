@@ -11,12 +11,11 @@ class TwitterClient(object):
         '''
         Class constructor or initialization method.
         '''
-       
-        consumer_key = 'XXXXXXXXXXXX'
-        consumer_secret = 'XXXXXXXXXXXX'
-        access_token = 'XXXXXXXXXXXX'
-        access_token_secret = 'XXXXXXXXXXXX'
- 
+        
+        consumer_key = '???'
+        consumer_secret = '???'
+        access_token = '???'
+        access_token_secret = '???'
        
         try:
          
@@ -85,8 +84,16 @@ class TwitterClient(object):
             print("Error : " + str(e))
  
 def main():
+    tweets = []
+    subjects = []
+    cli = raw_input("Enter prompt to search: ")
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    for everycomma in cli.split(','):
+        #print(everycomma)
+        subjects.append(everycomma.strip(" "))
+        #print(subjects)
+    for temp in subjects:
+        tweets += (api.get_tweets(query = temp, count = 500))
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
