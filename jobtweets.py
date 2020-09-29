@@ -2,6 +2,7 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+import matplotlib.pyplot as plt
  
 class TwitterClient(object):
     '''
@@ -11,13 +12,13 @@ class TwitterClient(object):
         '''
         Class constructor or initialization method.
         '''
-       
+
         consumer_key = 'XXXXXXXXXXXX'
         consumer_secret = 'XXXXXXXXXXXX'
         access_token = 'XXXXXXXXXXXX'
         access_token_secret = 'XXXXXXXXXXXX'
- 
-       
+        
+        
         try:
          
             self.auth = OAuthHandler(consumer_key, consumer_secret)
@@ -54,9 +55,9 @@ class TwitterClient(object):
         '''
         Main function to fetch tweets and parse them.
         '''
-       
+        
         tweets = []
- 
+
         try:
           
             fetched_tweets = self.api.search(q = query, count = count)
@@ -104,7 +105,21 @@ def main():
     print("\n\nNegative tweets:")
     for tweet in ntweets[:10]:
         print(tweet['text'])
+        
+    #After displaying percentages in the console -> show as pie-plot
+    percentages=[]
+    percentages.append(100*len(ptweets)/len(tweets))
+    percentages.append(100*len(ntweets)/len(tweets))
+    percentages.append(100*len(tweets)/len(tweets))
+    explode = (0, 0, 0) #change explodes to highlight a piece
+    labels=["Positve Tweets", "Negative Tweets", "Neutral Tweets"]
+    plt.pie(percentages,explode=explode,labels=labels,autopct='%1.1f%%')
+    plt.title("Graphical representation of the results",fontsize=16) 
+    plt.axis("equal")
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, 0),
+          ncol=3, fancybox=True, shadow=True)   
+    plt.show()
+    
  
 if __name__ == "__main__":
-
     main()
