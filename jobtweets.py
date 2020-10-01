@@ -85,8 +85,9 @@ class TwitterClient(object):
             print("Error : " + str(e))
  
 def main():
+    cli_query = input("query: ")
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    tweets = api.get_tweets(query = cli_query, count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
