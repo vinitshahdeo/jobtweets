@@ -15,7 +15,8 @@ def find_variance(data):
 
 data=[52, 45, 45, 52, 26, 38, 15, 13]
 variance=find_variance(data)
-sd=variance**0.5
+sd=variance**0.5+0.1
+#offset
 print(sd)
 print('\n')
 print(variance)

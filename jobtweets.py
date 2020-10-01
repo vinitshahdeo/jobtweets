@@ -66,12 +66,12 @@ class TwitterClient(object):
                
                 parsed_tweet = {}
  
-               
+                parsed_tweet['value']=tweet.text.size
                 parsed_tweet['text'] = tweet.text
                
                 parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
  
-                if tweet.retweet_count > 0:
+                if tweet.retweet_count>0 and tweet.text.size> 0:
                  
                     if parsed_tweet not in tweets:
                         tweets.append(parsed_tweet)
@@ -100,6 +100,7 @@ def main():
     print("\n\nPositive tweets:")
     for tweet in ptweets[:10]:
         print(tweet['text'])
+        print(tweet['value'])
  
     print("\n\nNegative tweets:")
     for tweet in ntweets[:10]:
