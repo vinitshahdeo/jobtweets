@@ -114,10 +114,9 @@ def main():
     explode = (0, 0, 0) #change explodes to highlight a piece
     labels=["Positve Tweets", "Negative Tweets", "Neutral Tweets"]
     plt.pie(percentages,explode=explode,labels=labels,autopct='%1.1f%%')
-    plt.title("Graphical representation of the results",fontsize=16) 
+    plt.title("Graphical representation of the results",fontsize=16)
     plt.axis("equal")
-    plt.legend(loc='upper center', bbox_to_anchor=(0.5, 0),
-          ncol=3, fancybox=True, shadow=True)   
+    plt.legend(loc='upper center',bbox_to_anchor=(0.5, 0),ncol=3,fancybox=True,shadow=True)
     plt.show()
     
  
