@@ -86,9 +86,22 @@ class TwitterClient(object):
  
 def main():
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    # tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    
+    tweets = []
+    subjects = []
+    cli = input('Enter #hashtag to search: ')
+
+    for comma in cli.split(','):
+        # print(comma)
+        subjects.append(comma.strip(' '))
+        # print(subjects)
+    
+    for sub in subjects:
+        tweets += (api.get_tweets(query = sub, count = 500))
+    
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
-   
+
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
 
     ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
