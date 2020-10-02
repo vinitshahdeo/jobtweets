@@ -34,6 +34,43 @@ class TwitterClient(object):
         using simple regex statements.
         '''
         return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
+
+    def get_hashtags(self):
+        '''
+        Function to seprate hashtags
+        '''
+        hashtags = []
+        
+        hashtags_str = input("Enter Hashtags : ")
+        first_char = 0
+        last_char = hashtags_str.find(',')
+        
+        while last_char != -1:
+            hashtag = hashtags_str[first_char:last_char].strip()
+            if len(hashtag) != 0:
+                hashtags.append(hashtag)
+            first_char = last_char + 1
+            last_char = hashtags_str.find(',', last_char + 1)
+            
+        if first_char + 1 != len(hashtags):
+            hashtag = hashtags_str[first_char:].strip()
+            hashtags.append(hashtag)
+        
+        return hashtags
+       
+    def get_multi_tweets(self):
+        '''
+        Function to get tweets from multiple hashtags
+        '''
+        
+        tweets = []
+        
+        hashtags = self.get_hashtags()
+        for hashtag in hashtags:            
+            query_tweets = self.get_tweets(query = hashtag, count = 500)
+            tweets.extend(query_tweets)
+           
+        return tweets        
  
     def get_tweet_sentiment(self, tweet):
         '''
@@ -86,7 +123,8 @@ class TwitterClient(object):
  
 def main():
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    #tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    tweets = api.get_multi_tweets()
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
