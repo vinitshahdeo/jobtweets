@@ -89,13 +89,13 @@ def main():
     tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
-    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
+    print("\nPositive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
 
     ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
 
-    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
+    print("\nNegative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
 
-    print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
+    print("/nNeutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
  
     print("\n\nPositive tweets:")
     for tweet in ptweets[:10]:
