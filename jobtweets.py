@@ -2,7 +2,8 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
- 
+import matplotlib.pyplot as plt
+
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
@@ -88,15 +89,17 @@ def main():
     api = TwitterClient()
     tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
-   
-    print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
-
     ntweets = [tweet for tweet in tweets if tweet['sentiment'] == 'negative']
 
-    print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
-
-    print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
- 
+    plt.figure(figsize=(7, 5))
+    plt.pie([len(ptweets)/len(tweets), len(ntweets)/len(tweets), (len(tweets)-len(ptweets)-len(ntweets))/len(tweets)],
+            labels=["postive", "negative", "neutral"],
+            autopct='%1.1f%%',
+            startangle=90)
+    plt.title("Job Opportunities Tweets Sentiment")
+    plt.axis("equal")
+    plt.show()
+    
     print("\n\nPositive tweets:")
     for tweet in ptweets[:10]:
         print(tweet['text'])
@@ -104,7 +107,7 @@ def main():
     print("\n\nNegative tweets:")
     for tweet in ntweets[:10]:
         print(tweet['text'])
- 
+        
 if __name__ == "__main__":
 
     main()
