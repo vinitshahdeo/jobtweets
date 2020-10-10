@@ -2,7 +2,8 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
