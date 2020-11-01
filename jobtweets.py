@@ -1,7 +1,10 @@
+import os
+from os.path import join, dirname
 import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+from dotenv import load_dotenv
  
 class TwitterClient(object):
     '''
@@ -11,12 +14,13 @@ class TwitterClient(object):
         '''
         Class constructor or initialization method.
         '''
-       
-        consumer_key = 'XXXXXXXXXXXX'
-        consumer_secret = 'XXXXXXXXXXXX'
-        access_token = 'XXXXXXXXXXXX'
-        access_token_secret = 'XXXXXXXXXXXX'
- 
+        dotenv_path = join(dirname(__file__), '.env')
+        load_dotenv(dotenv_path)
+
+        consumer_key = os.getenv('CONSUMER_KEY')
+        consumer_secret = os.getenv('CONSUMER_SECRET')
+        access_token = os.getenv('ACCESS_TOKEN')
+        access_token_secret = os.getenv('ACCESS_TOKEN_SECRET') 
        
         try:
          
