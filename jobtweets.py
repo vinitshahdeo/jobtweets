@@ -2,6 +2,8 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+import matplotlib.pyplot as plt
+
  
 class TwitterClient(object):
     '''
@@ -83,7 +85,16 @@ class TwitterClient(object):
  
         except tweepy.TweepError as e:
             print("Error : " + str(e))
- 
+
+def plotPieChart(negativeTweetercentage, positiveTweetPercentage, neutralTweetPercentage):
+    labels = 'Negative Tweets', 'Positive Tweets', 'Neutral Tweets'
+    sizes = [negativeTweetercentage, positiveTweetPercentage, neutralTweetPercentage]
+    explode = (0, 0, 0, 0)  
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    plt.show()
+
 def main():
     api = TwitterClient()
     tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
@@ -96,7 +107,7 @@ def main():
     print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
 
     print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
- 
+    plotPieChart(100*len(ptweets)/len(tweets),100*len(ptweets)/len(tweets),100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets))
     print("\n\nPositive tweets:")
     for tweet in ptweets[:10]:
         print(tweet['text'])
