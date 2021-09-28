@@ -74,6 +74,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 
 - Install **Tweepy** using pip command: `pip install tweepy`
 - Install **TextBlob** using pip command: `pip install textblob`
+- Install **Python-DotEnv** usint pip command: `pip install python-dotenv`
 
 ### How to run?
 
@@ -83,7 +84,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 - In order to fetch tweets through **Twitter API**, you need to register an App through your twitter account. 
 - Follow this [link](https://apps.twitter.com/) to register your app.
 - Get the API keys. Need help, follow this [link](https://themepacific.com/how-to-generate-api-key-consumer-token-access-key-for-twitter-oauth/994/)
-- Open `jobtweets.py` and replace '**XXXXXXXXXXXX**' with your API keys.
+- Open `.env` and replace '**XXXXXXXXXXXX**' with your API keys.
 
 ```python
 
