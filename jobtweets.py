@@ -2,7 +2,11 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
- 
+import os
+from dotenv import load_dotenv
+
+load_dotenv() #loads tweeter api secret keys from .env
+
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
@@ -12,10 +16,10 @@ class TwitterClient(object):
         Class constructor or initialization method.
         '''
        
-        consumer_key = 'XXXXXXXXXXXX'
-        consumer_secret = 'XXXXXXXXXXXX'
-        access_token = 'XXXXXXXXXXXX'
-        access_token_secret = 'XXXXXXXXXXXX'
+        consumer_key = os.getenv("CONSUMER_KEY")
+        consumer_secret = os.getenv("CONSUMER_SECRET")
+        access_token = os.getenv("ACCESS_TOKEN")
+        access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
  
        
         try:
