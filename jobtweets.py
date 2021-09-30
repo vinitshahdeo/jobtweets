@@ -107,6 +107,14 @@ def main():
 
     plt.show()
  
+    print("\n\nPositive tweets:")
+    for tweet in ptweets[:10]:
+        print(tweet['text'])
+ 
+    print("\n\nNegative tweets:")
+    for tweet in ntweets[:10]:
+        print(tweet['text'])
+
 if __name__ == "__main__":
 
     main()
