@@ -15,10 +15,6 @@
 [![FreshHiring](https://badgen.net/badge/%23/FreshHiring?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) [![Recruitments](https://badgen.net/badge/%23/Recruitments?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) [![JobOpportunities](https://badgen.net/badge/%23/JobOpportunities?&scale=1.3)](https://vinitshahdeo.github.io/jobtweets/) 
 
 
-### Motivation
-
-Twitter is all about enabling users to send out brief messages to large audiences. If you haven’t been taking advantage of Twitter as a job search tool, it’s time to jump in. When used intelligently, Twitter can have a profound impact on your job search success – or lack thereof. Small steps can help you turn Twitter into your own personal job search platform. Try them today and see what a difference they make in your overall job search success.
-
 ### About the Project
 
 #### What is Sentiment Analysis?
