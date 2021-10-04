@@ -58,27 +58,22 @@ class TwitterClient(object):
         tweets = []
  
         try:
-          
-            fetched_tweets = self.api.search(q = query, count = count)
+            for qu in query:
+                fetched_tweets = self.api.search(q = qu, count = count)
+                for tweet in fetched_tweets:
+                    parsed_tweet = {}
  
-           
-            for tweet in fetched_tweets:
+                    parsed_tweet['text'] = tweet.text
                
-                parsed_tweet = {}
+                    parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
  
-               
-                parsed_tweet['text'] = tweet.text
-               
-                parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
- 
-                if tweet.retweet_count > 0:
+                    if tweet.retweet_count > 0:
                  
-                    if parsed_tweet not in tweets:
+                        if parsed_tweet not in tweets:
+                            tweets.append(parsed_tweet)
+                    else:
                         tweets.append(parsed_tweet)
-                else:
-                    tweets.append(parsed_tweet)
  
-        
             return tweets
  
         except tweepy.TweepError as e:
