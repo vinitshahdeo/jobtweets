@@ -2,7 +2,8 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
- 
+from matplotlib import pyplot as plt
+import numpy as np
 class TwitterClient(object):
     '''
     Generic Twitter Class for sentiment analysis.
@@ -56,29 +57,25 @@ class TwitterClient(object):
         '''
        
         tweets = []
- 
-        try:
-          
-            fetched_tweets = self.api.search(q = query, count = count)
- 
-           
-            for tweet in fetched_tweets:
-               
-                parsed_tweet = {}
- 
-               
-                parsed_tweet['text'] = tweet.text
-               
-                parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
- 
-                if tweet.retweet_count > 0:
-                 
-                    if parsed_tweet not in tweets:
-                        tweets.append(parsed_tweet)
-                else:
-                    tweets.append(parsed_tweet)
- 
+        querl=query.split()
         
+        try:
+            for qu in querl:
+                fetched_tweets = self.api.search(q = qu.strip(), count = count)
+                for tweet in fetched_tweets:
+                    parsed_tweet = {}
+ 
+                    parsed_tweet['text'] = tweet.text
+               
+                    parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
+ 
+                    if tweet.retweet_count > 0:
+                 
+                        if parsed_tweet not in tweets:
+                            tweets.append(parsed_tweet)
+                    else:
+                        tweets.append(parsed_tweet)
+ 
             return tweets
  
         except tweepy.TweepError as e:
@@ -96,7 +93,11 @@ def main():
     print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
 
     print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
- 
+    data=[100*len(ptweets)/len(tweets),100*len(ntweets)/len(tweets),100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)]
+    lab=['Positive','Negative','Neutral']
+    fig = plt.figure(figsize =(10, 7))
+    plt.pie(data, labels = lab)
+    plt.show()
     print("\n\nPositive tweets:")
     for tweet in ptweets[:10]:
         print(tweet['text'])
