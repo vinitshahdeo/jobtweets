@@ -2,6 +2,8 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+import sys
+import argparse
  
 class TwitterClient(object):
     '''
@@ -85,8 +87,14 @@ class TwitterClient(object):
             print("Error : " + str(e))
  
 def main():
+    tweets = []
+    category = []
+    cli_input = raw_input("Search your query : ")
     api = TwitterClient()
-    tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
+    for each_comma in cli_input.split(','):
+        category.append(each_comma.strip(" "))
+    for t in category:
+        tweets += (api.get_tweets(query = t, count = 500))
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
    
     print("Positive tweets percentage: {} %".format(100*len(ptweets)/len(tweets)))
